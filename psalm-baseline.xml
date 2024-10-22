@@ -838,9 +838,6 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Controllers/Database/CentralColumns/PopulateColumnsController.php">
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('selectedTable')]]></code>
-    </MixedArgument>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -881,40 +878,11 @@
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
     <MixedArgument>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$page]]></code>
       <code><![CDATA[$position['dbName']]]></code>
       <code><![CDATA[$position['tableName']]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('DB1')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('DB2')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('F1')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('F1')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('F2')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('F2')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('T1')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('T1')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('T2')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('T2')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('field')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('index')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('on_delete')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('on_update')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('selected_page')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('selected_value')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('selected_value')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('selected_value')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('value')]]></code>
       <code><![CDATA[$request->getQueryParam('db')]]></code>
       <code><![CDATA[$request->getQueryParam('db')]]></code>
       <code><![CDATA[$request->getQueryParam('db')]]></code>
-      <code><![CDATA[$table]]></code>
-      <code><![CDATA[$table]]></code>
     </MixedArgument>
     <MixedArrayAccess>
       <code><![CDATA[$position['dbName']]]></code>
@@ -924,19 +892,20 @@
     </MixedArrayAccess>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
-      <code><![CDATA[$db]]></code>
-      <code><![CDATA[$dialog]]></code>
-      <code><![CDATA[$operation]]></code>
-      <code><![CDATA[$page]]></code>
       <code><![CDATA[$position]]></code>
-      <code><![CDATA[$table]]></code>
     </MixedAssignment>
     <MixedOperand>
       <code><![CDATA[$position['dbName']]]></code>
       <code><![CDATA[$position['tableName']]]></code>
     </MixedOperand>
     <PossiblyNullArgument>
-      <code><![CDATA[$page]]></code>
+      <code><![CDATA[$db]]></code>
+      <code><![CDATA[$db]]></code>
+      <code><![CDATA[$db]]></code>
+      <code><![CDATA[$db]]></code>
+      <code><![CDATA[$db]]></code>
+      <code><![CDATA[$db]]></code>
+      <code><![CDATA[$table]]></code>
     </PossiblyNullArgument>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
@@ -1059,7 +1028,6 @@
   <file src="src/Controllers/Database/MultiTableQuery/QueryController.php">
     <MixedArgument>
       <code><![CDATA[$request->getParam('db')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('sql_query')]]></code>
     </MixedArgument>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -1244,13 +1212,9 @@
       <code><![CDATA[$GLOBALS['back']]]></code>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$delimiter]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['back']]]></code>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
-      <code><![CDATA[$delimiter]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -1262,9 +1226,6 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Controllers/Database/Structure/AddPrefixTableController.php">
-    <MixedOperand>
-      <code><![CDATA[$request->getParsedBodyParam('add_prefix', '')]]></code>
-    </MixedOperand>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -1296,21 +1257,11 @@
     </DeprecatedMethod>
   </file>
   <file src="src/Controllers/Database/Structure/CopyTableController.php">
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('what')]]></code>
-    </MixedArgument>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Controllers/Database/Structure/CopyTableWithPrefixController.php">
-    <MixedAssignment>
-      <code><![CDATA[$fromPrefix]]></code>
-      <code><![CDATA[$toPrefix]]></code>
-    </MixedAssignment>
-    <MixedOperand>
-      <code><![CDATA[$toPrefix]]></code>
-    </MixedOperand>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -1411,13 +1362,6 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Controllers/Database/Structure/ReplacePrefixController.php">
-    <MixedAssignment>
-      <code><![CDATA[$fromPrefix]]></code>
-      <code><![CDATA[$toPrefix]]></code>
-    </MixedAssignment>
-    <MixedOperand>
-      <code><![CDATA[$toPrefix]]></code>
-    </MixedOperand>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -1461,7 +1405,6 @@
       <code><![CDATA[$replicaInfo['Ignore_Table']]]></code>
       <code><![CDATA[$replicaInfo['Wild_Do_Table']]]></code>
       <code><![CDATA[$replicaInfo['Wild_Ignore_Table']]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('primary_connection')]]></code>
       <code><![CDATA[$truename]]></code>
     </MixedArgument>
     <MixedArrayAccess>
@@ -1517,9 +1460,6 @@
     </InvalidArrayOffset>
     <MixedArgument>
       <code><![CDATA[$request->getParsedBodyParam('selected')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('table')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('version')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('version')]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
@@ -1603,15 +1543,8 @@
       <code><![CDATA[$GLOBALS['sql_query']]]></code>
       <code><![CDATA[$GLOBALS['sql_query']]]></code>
       <code><![CDATA[$GLOBALS['sql_query']]]></code>
-      <code><![CDATA[$allrows]]></code>
-      <code><![CDATA[$allrows]]></code>
       <code><![CDATA[$dbSelect]]></code>
-      <code><![CDATA[$limitFrom]]></code>
-      <code><![CDATA[$limitFrom]]></code>
-      <code><![CDATA[$limitTo]]></code>
-      <code><![CDATA[$limitTo]]></code>
       <code><![CDATA[$rememberTemplate]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('filename_template')]]></code>
     </MixedArgument>
     <MixedArgumentTypeCoercion>
       <code><![CDATA[$GLOBALS['table_data']]]></code>
@@ -1731,10 +1664,7 @@
       <code><![CDATA[$GLOBALS['xml_export_views']]]></code>
       <code><![CDATA[$GLOBALS['xml_structure_or_data']]]></code>
       <code><![CDATA[$GLOBALS['yaml_structure_or_data']]]></code>
-      <code><![CDATA[$allrows]]></code>
       <code><![CDATA[$dbSelect]]></code>
-      <code><![CDATA[$limitFrom]]></code>
-      <code><![CDATA[$limitTo]]></code>
       <code><![CDATA[$rememberTemplate]]></code>
       <code><![CDATA[$tableNames]]></code>
       <code><![CDATA[$tableStructure]]></code>
@@ -1893,7 +1823,6 @@
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
       <code><![CDATA[$GLOBALS['show_query']]]></code>
-      <code><![CDATA[Current::$database]]></code>
     </MixedAssignment>
     <PossiblyNullArgument>
       <code><![CDATA[$this->config->get('TempDir')]]></code>
@@ -1957,7 +1886,7 @@
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
     <PropertyTypeCoercion>
-      <code><![CDATA[(string) $request->getParsedBodyParam('import_type')]]></code>
+      <code><![CDATA[$request->getParsedBodyParamAsString('import_type', '')]]></code>
     </PropertyTypeCoercion>
     <RiskyTruthyFalsyComparison>
       <code><![CDATA[empty($GLOBALS['goto'])]]></code>
@@ -2002,20 +1931,6 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Controllers/NavigationController.php">
-    <MixedArgument>
-      <code><![CDATA[$dbName]]></code>
-      <code><![CDATA[$dbName]]></code>
-      <code><![CDATA[$dbName]]></code>
-      <code><![CDATA[$itemName]]></code>
-      <code><![CDATA[$itemName]]></code>
-      <code><![CDATA[$itemType]]></code>
-      <code><![CDATA[$itemType]]></code>
-    </MixedArgument>
-    <MixedAssignment>
-      <code><![CDATA[$dbName]]></code>
-      <code><![CDATA[$itemName]]></code>
-      <code><![CDATA[$itemType]]></code>
-    </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
@@ -2031,9 +1946,6 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Controllers/Normalization/FirstNormalForm/FirstStepController.php">
-    <MixedAssignment>
-      <code><![CDATA[$normalizeTo]]></code>
-    </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
@@ -2064,18 +1976,6 @@
     </PossiblyUnusedReturnValue>
   </file>
   <file src="src/Controllers/Normalization/MoveRepeatingGroup.php">
-    <MixedArgument>
-      <code><![CDATA[$newColumn]]></code>
-      <code><![CDATA[$newTable]]></code>
-      <code><![CDATA[$primaryColumns]]></code>
-      <code><![CDATA[$repeatingColumns]]></code>
-    </MixedArgument>
-    <MixedAssignment>
-      <code><![CDATA[$newColumn]]></code>
-      <code><![CDATA[$newTable]]></code>
-      <code><![CDATA[$primaryColumns]]></code>
-      <code><![CDATA[$repeatingColumns]]></code>
-    </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
@@ -2088,8 +1988,6 @@
   <file src="src/Controllers/Normalization/SecondNormalForm/CreateNewTablesController.php">
     <MixedArgument>
       <code><![CDATA[$partialDependencies]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('newTablesName')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('pd')]]></code>
       <code><![CDATA[$tablesName]]></code>
     </MixedArgument>
     <MixedAssignment>
@@ -2108,7 +2006,6 @@
   <file src="src/Controllers/Normalization/SecondNormalForm/NewTablesController.php">
     <MixedArgument>
       <code><![CDATA[$partialDependencies]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('pd')]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$partialDependencies]]></code>
@@ -2120,7 +2017,6 @@
   <file src="src/Controllers/Normalization/ThirdNormalForm/CreateNewTablesController.php">
     <MixedArgument>
       <code><![CDATA[$newtables]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('newTables')]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$newtables]]></code>
@@ -2143,8 +2039,6 @@
   <file src="src/Controllers/Normalization/ThirdNormalForm/NewTablesController.php">
     <MixedArgument>
       <code><![CDATA[$dependencies]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('pd')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('tables')]]></code>
       <code><![CDATA[$tables]]></code>
     </MixedArgument>
     <MixedAssignment>
@@ -2162,19 +2056,12 @@
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$dbCollation]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
-      <code><![CDATA[$dbCollation]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
-    <RiskyTruthyFalsyComparison>
-      <code><![CDATA[empty($dbCollation)]]></code>
-    </RiskyTruthyFalsyComparison>
   </file>
   <file src="src/Controllers/Operations/DatabaseController.php">
     <ArgumentTypeCoercion>
@@ -2188,7 +2075,6 @@
       <code><![CDATA[$GLOBALS['single_table']]]></code>
     </InvalidArrayOffset>
     <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('comment')]]></code>
       <code><![CDATA[Current::$database]]></code>
       <code><![CDATA[Current::$database]]></code>
       <code><![CDATA[Current::$database]]></code>
@@ -2265,15 +2151,9 @@
     </DeprecatedMethod>
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2285,15 +2165,9 @@
     </DeprecatedMethod>
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2305,15 +2179,9 @@
     </DeprecatedMethod>
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2325,15 +2193,9 @@
     </DeprecatedMethod>
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2349,8 +2211,6 @@
     <MixedArgument>
       <code><![CDATA[$configuration['ThemeDefault']]]></code>
       <code><![CDATA[$configuration['ThemeDefault']]]></code>
-      <code><![CDATA[$json]]></code>
-      <code><![CDATA[$returnUrl]]></code>
     </MixedArgument>
     <MixedArgumentTypeCoercion>
       <code><![CDATA[$key]]></code>
@@ -2359,9 +2219,7 @@
       <code><![CDATA[$GLOBALS['query']]]></code>
       <code><![CDATA[$_POST[str_replace('/', '-', (string) $k)]]]></code>
       <code><![CDATA[$configuration]]></code>
-      <code><![CDATA[$json]]></code>
       <code><![CDATA[$redirectParams['lang']]]></code>
-      <code><![CDATA[$returnUrl]]></code>
       <code><![CDATA[$v]]></code>
       <code><![CDATA[$val]]></code>
     </MixedAssignment>
@@ -2402,15 +2260,9 @@
     </DeprecatedMethod>
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2422,15 +2274,9 @@
     </DeprecatedMethod>
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['hash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
-      <code><![CDATA[$GLOBALS['tabHash']]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2440,9 +2286,6 @@
     <DeprecatedMethod>
       <code><![CDATA[Config::getInstance()]]></code>
     </DeprecatedMethod>
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('2fa_configure')]]></code>
-    </MixedArgument>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -2451,14 +2294,6 @@
     <DeprecatedMethod>
       <code><![CDATA[Config::getInstance()]]></code>
     </DeprecatedMethod>
-    <MixedArgument>
-      <code><![CDATA[$log]]></code>
-      <code><![CDATA[$log ?? '']]></code>
-    </MixedArgument>
-    <MixedAssignment>
-      <code><![CDATA[$log]]></code>
-      <code><![CDATA[$urlParams['log']]]></code>
-    </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
@@ -2475,9 +2310,6 @@
     <DeprecatedMethod>
       <code><![CDATA[Config::getInstance()]]></code>
     </DeprecatedMethod>
-    <MixedAssignment>
-      <code><![CDATA[$dbCollation]]></code>
-    </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
@@ -2519,7 +2351,6 @@
       <code><![CDATA[$replicaInfo['Do_DB']]]></code>
       <code><![CDATA[$replicaInfo['Do_DB']]]></code>
       <code><![CDATA[$replicaInfo['Ignore_DB']]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('primary_connection')]]></code>
     </MixedArgument>
     <MixedArgumentTypeCoercion>
       <code><![CDATA[['db' => $database['SCHEMA_NAME']]]]></code>
@@ -2633,11 +2464,6 @@
     </InvalidArrayOffset>
     <MixedArgument>
       <code><![CDATA[$dbName ?? '']]></code>
-      <code><![CDATA[$request->getParsedBodyParam('old_hostname')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('old_hostname', '')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('old_username')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('old_username', '')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('userGroup', '')]]></code>
       <code><![CDATA[$request->getQueryParam('initial')]]></code>
       <code><![CDATA[$urlDbname ?? '']]></code>
       <code><![CDATA[$urlDbname ?? '']]></code>
@@ -2671,9 +2497,6 @@
     </InvalidArrayOffset>
     <MixedArgument>
       <code><![CDATA[$replicaInfo['status']]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('hostname', '')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('pma_pw', '')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('username', '')]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
@@ -2710,12 +2533,8 @@
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$requiredData]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
-      <code><![CDATA[$requiredData]]></code>
     </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
@@ -2736,10 +2555,6 @@
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('varName')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('varValue')]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </MixedAssignment>
@@ -2751,10 +2566,6 @@
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('database', '')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('query', '')]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </MixedAssignment>
@@ -2824,8 +2635,6 @@
   </file>
   <file src="src/Controllers/Server/Status/StatusController.php">
     <MixedArgument>
-      <code><![CDATA[$primaryConnection]]></code>
-      <code><![CDATA[$primaryConnection]]></code>
       <code><![CDATA[$this->data->status['Aborted_clients']]]></code>
       <code><![CDATA[$this->data->status['Aborted_clients'] * $hourFactor]]></code>
       <code><![CDATA[$this->data->status['Aborted_clients'] * 100 / $this->data->status['Connections']]]></code>
@@ -2846,7 +2655,6 @@
     <MixedAssignment>
       <code><![CDATA[$hourFactor]]></code>
       <code><![CDATA[$hourFactor]]></code>
-      <code><![CDATA[$primaryConnection]]></code>
     </MixedAssignment>
     <MixedOperand>
       <code><![CDATA[$this->data->status['Aborted_clients']]]></code>
@@ -2909,12 +2717,6 @@
     </UnusedVariable>
   </file>
   <file src="src/Controllers/Server/UserGroupsController.php">
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('userGroup')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('userGroup')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('userGroup')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('userGroup')]]></code>
-    </MixedArgument>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -2996,10 +2798,6 @@
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Controllers/Sql/EnumValuesController.php">
-    <MixedAssignment>
-      <code><![CDATA[$column]]></code>
-      <code><![CDATA[$currValue]]></code>
-    </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
@@ -3008,27 +2806,11 @@
     <MixedArrayAccess>
       <code><![CDATA[$_SESSION['tmpval']['relational_display']]]></code>
     </MixedArrayAccess>
-    <MixedAssignment>
-      <code><![CDATA[$column]]></code>
-      <code><![CDATA[$currValue]]></code>
-      <code><![CDATA[$currValue]]></code>
-      <code><![CDATA[$relationKeyOrDisplayColumn]]></code>
-    </MixedAssignment>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
   </file>
   <file src="src/Controllers/Sql/SetValuesController.php">
-    <MixedArgument>
-      <code><![CDATA[$column]]></code>
-      <code><![CDATA[$currentValue]]></code>
-      <code><![CDATA[$whereClause]]></code>
-    </MixedArgument>
-    <MixedAssignment>
-      <code><![CDATA[$column]]></code>
-      <code><![CDATA[$currentValue]]></code>
-      <code><![CDATA[$whereClause]]></code>
-    </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
     </PossiblyUnusedReturnValue>
@@ -3221,10 +3003,6 @@
       <code><![CDATA[$_POST['field_transformation'][$fieldindex]]]></code>
       <code><![CDATA[$_POST['field_transformation_options'][$fieldindex]]]></code>
     </MixedArgument>
-    <MixedAssignment>
-      <code><![CDATA[$numFields]]></code>
-      <code><![CDATA[$origNumFields]]></code>
-    </MixedAssignment>
     <PossiblyInvalidArgument>
       <code><![CDATA[$_POST['field_input_transformation'][$fieldindex]]]></code>
       <code><![CDATA[$_POST['field_input_transformation_options'][$fieldindex]]]></code>
@@ -3280,13 +3058,11 @@
     <MixedArgument>
       <code><![CDATA[$GLOBALS['disp_message'] ?? null]]></code>
       <code><![CDATA[$GLOBALS['disp_query'] ?? null]]></code>
-      <code><![CDATA[$GLOBALS['sql_query']]]></code>
       <code><![CDATA[$row]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['disp_message']]]></code>
       <code><![CDATA[$GLOBALS['disp_query']]]></code>
-      <code><![CDATA[$GLOBALS['sql_query']]]></code>
       <code><![CDATA[$row]]></code>
     </MixedAssignment>
     <PossiblyInvalidIterator>
@@ -3470,15 +3246,8 @@
     <InvalidArrayOffset>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
-    <MixedArgument>
-      <code><![CDATA[$indexName]]></code>
-      <code><![CDATA[$indexName]]></code>
-      <code><![CDATA[$oldIndexName]]></code>
-    </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
-      <code><![CDATA[$indexName]]></code>
-      <code><![CDATA[$oldIndexName]]></code>
     </MixedAssignment>
     <PossiblyUnusedReturnValue>
       <code><![CDATA[Response]]></code>
@@ -3675,12 +3444,8 @@
       <code><![CDATA[$multiEditFuncs[$key] ?? '']]></code>
       <code><![CDATA[$multiEditSalt[$key] ?? null]]></code>
       <code><![CDATA[$oneWhereClause]]></code>
-      <code><![CDATA[$relFieldsList]]></code>
       <code><![CDATA[$relationField]]></code>
       <code><![CDATA[$relationFieldValue]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('db')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('table')]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('transform_fields_list')]]></code>
     </MixedArgument>
     <MixedArrayAccess>
       <code><![CDATA[$extraData['relations']]]></code>
@@ -3709,7 +3474,6 @@
       <code><![CDATA[$GLOBALS['unsaved_values']]]></code>
       <code><![CDATA[$GLOBALS['unsaved_values'][$rowNumber]]]></code>
       <code><![CDATA[$GLOBALS['urlParams']['where_clause'][]]]></code>
-      <code><![CDATA[$afterInsert]]></code>
       <code><![CDATA[$clauseIsUnique]]></code>
       <code><![CDATA[$columnName]]></code>
       <code><![CDATA[$columnName]]></code>
@@ -3727,7 +3491,6 @@
       <code><![CDATA[$multiEditSalt]]></code>
       <code><![CDATA[$multiEditVirtual]]></code>
       <code><![CDATA[$oneWhereClause]]></code>
-      <code><![CDATA[$relFieldsList]]></code>
       <code><![CDATA[$relationField]]></code>
       <code><![CDATA[$relationFieldValue]]></code>
       <code><![CDATA[$submitType]]></code>
@@ -3791,13 +3554,11 @@
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
     </InvalidArrayOffset>
     <MixedArgument>
-      <code><![CDATA[$delimiter]]></code>
       <code><![CDATA[$request->getQueryParam('sql_query', true)]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['back']]]></code>
       <code><![CDATA[$GLOBALS['errorUrl']]]></code>
-      <code><![CDATA[$delimiter]]></code>
     </MixedAssignment>
   </file>
   <file src="src/Controllers/Table/Structure/BrowseController.php">
@@ -3821,9 +3582,6 @@
     </RiskyTruthyFalsyComparison>
   </file>
   <file src="src/Controllers/Table/Structure/CentralColumnsAddController.php">
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('table')]]></code>
-    </MixedArgument>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -4123,9 +3881,6 @@
     </RiskyTruthyFalsyComparison>
   </file>
   <file src="src/Controllers/TableController.php">
-    <MixedArgument>
-      <code><![CDATA[$request->getParsedBodyParam('db')]]></code>
-    </MixedArgument>
     <PossiblyUnusedMethod>
       <code><![CDATA[__construct]]></code>
     </PossiblyUnusedMethod>
@@ -4218,17 +3973,9 @@
     </InvalidArrayOffset>
     <MixedArgument>
       <code><![CDATA[$message->getDisplay()]]></code>
-      <code><![CDATA[$password]]></code>
-      <code><![CDATA[$pmaPw]]></code>
-      <code><![CDATA[$pmaPw2]]></code>
-      <code><![CDATA[$request->getParsedBodyParam('authentication_plugin')]]></code>
     </MixedArgument>
     <MixedAssignment>
       <code><![CDATA[$GLOBALS['change_password_message']]]></code>
-      <code><![CDATA[$noPass]]></code>
-      <code><![CDATA[$password]]></code>
-      <code><![CDATA[$pmaPw]]></code>
-      <code><![CDATA[$pmaPw2]]></code>
     </MixedAssignment>
     <MixedMethodCall>
       <code><![CDATA[getDisplay]]></code>

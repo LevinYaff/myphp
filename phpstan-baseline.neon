@@ -1408,11 +1408,6 @@ parameters:
 			path: src/Controllers/Console/Bookmark/AddController.php
 
 		-
-			message: "#^Parameter \\#2 \\$table of method PhpMyAdmin\\\\Database\\\\CentralColumns\\:\\:getColumnsNotInCentralList\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/CentralColumns/PopulateColumnsController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
@@ -1460,21 +1455,21 @@ parameters:
 
 		-
 			message: "#^Cannot cast mixed to int\\.$#"
-			count: 2
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\:\\:getHtmlForEditOrDeletePages\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\:\\:getHtmlForPageSaveAs\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Database/DesignerController.php
 
 		-
-			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\:\\:getHtmlForSchemaExport\\(\\) expects string, mixed given\\.$#"
+			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\:\\:getHtmlForEditOrDeletePages\\(\\) expects string, string\\|null given\\.$#"
+			count: 2
+			path: src/Controllers/Database/DesignerController.php
+
+		-
+			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\:\\:getHtmlForPageSaveAs\\(\\) expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Controllers/Database/DesignerController.php
+
+		-
+			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\:\\:getHtmlForSchemaExport\\(\\) expects string, string\\|null given\\.$#"
 			count: 1
 			path: src/Controllers/Database/DesignerController.php
 
@@ -1490,11 +1485,11 @@ parameters:
 
 		-
 			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:getTablesInfo\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 2
+			count: 1
 			path: src/Controllers/Database/DesignerController.php
 
 		-
-			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveDisplayField\\(\\) expects string, mixed given\\.$#"
+			message: "#^Parameter \\#1 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveDisplayField\\(\\) expects string, string\\|null given\\.$#"
 			count: 1
 			path: src/Controllers/Database/DesignerController.php
 
@@ -1504,117 +1499,17 @@ parameters:
 			path: src/Controllers/Database/DesignerController.php
 
 		-
-			message: "#^Parameter \\#1 \\$index of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveSetting\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$pageName of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:createNewPage\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$pg of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:deletePage\\(\\) expects int, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$pg of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:getPageExists\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$pg of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveTablePositions\\(\\) expects int, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$string of function htmlspecialchars expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$t1 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#1 \\$t1 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:removeRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#2 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:createNewPage\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#2 \\$f1 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#2 \\$f1 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:removeRelation\\(\\) expects string, mixed given\\.$#"
+			message: "#^Parameter \\#2 \\$db of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:createNewPage\\(\\) expects string, string\\|null given\\.$#"
 			count: 1
 			path: src/Controllers/Database/DesignerController.php
 
 		-
 			message: "#^Parameter \\#2 \\$table of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:getTablesInfo\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#2 \\$table of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveDisplayField\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Database/DesignerController.php
 
 		-
-			message: "#^Parameter \\#2 \\$value of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveSetting\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#3 \\$field of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveDisplayField\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#3 \\$t2 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#3 \\$t2 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:removeRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#4 \\$f2 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#4 \\$f2 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:removeRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#5 \\$onDelete of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#6 \\$onUpdate of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#7 \\$db1 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/DesignerController.php
-
-		-
-			message: "#^Parameter \\#8 \\$db2 of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:addNewRelation\\(\\) expects string, mixed given\\.$#"
+			message: "#^Parameter \\#2 \\$table of method PhpMyAdmin\\\\Database\\\\Designer\\\\Common\\:\\:saveDisplayField\\(\\) expects string, string\\|null given\\.$#"
 			count: 1
 			path: src/Controllers/Database/DesignerController.php
 
@@ -1736,11 +1631,6 @@ parameters:
 			message: "#^Cannot cast mixed to string\\.$#"
 			count: 1
 			path: src/Controllers/Database/ImportController.php
-
-		-
-			message: "#^Parameter \\#1 \\$sqlQuery of static method PhpMyAdmin\\\\Database\\\\MultiTableQuery\\:\\:displayResults\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/MultiTableQuery/QueryController.php
 
 		-
 			message: "#^Parameter \\#2 \\$db of static method PhpMyAdmin\\\\Database\\\\MultiTableQuery\\:\\:displayResults\\(\\) expects string, mixed given\\.$#"
@@ -1865,11 +1755,6 @@ parameters:
 			path: src/Controllers/Database/SqlController.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function htmlspecialchars expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/SqlController.php
-
-		-
 			message: "#^Parameter \\#1 \\$database of method PhpMyAdmin\\\\Database\\\\CentralColumns\\:\\:deleteColumnsFromList\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Database/Structure/CentralColumns/RemoveController.php
@@ -1881,16 +1766,6 @@ parameters:
 			"""
 			count: 1
 			path: src/Controllers/Database/Structure/CopyFormController.php
-
-		-
-			message: "#^Parameter \\#1 \\$value of static method PhpMyAdmin\\\\Table\\\\MoveScope\\:\\:from\\(\\) expects int\\|string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/Structure/CopyTableController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 1
-			path: src/Controllers/Database/Structure/CopyTableWithPrefixController.php
 
 		-
 			message: "#^Cannot access offset 'table_limit_offset' on mixed\\.$#"
@@ -2007,11 +1882,6 @@ parameters:
 			path: src/Controllers/Database/Structure/RealRowCountController.php
 
 		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 1
-			path: src/Controllers/Database/Structure/ReplacePrefixController.php
-
-		-
 			message: "#^Parameter \\#3 \\$statement of method PhpMyAdmin\\\\FlashMessenger\\:\\:addMessage\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Database/Structure/ReplacePrefixController.php
@@ -2051,11 +1921,6 @@ parameters:
 
 		-
 			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/StructureController.php
-
-		-
-			message: "#^Parameter \\#1 \\$connection of method PhpMyAdmin\\\\Replication\\\\ReplicationInfo\\:\\:load\\(\\) expects string\\|null, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Database/StructureController.php
 
@@ -2138,27 +2003,12 @@ parameters:
 			path: src/Controllers/Database/TrackingController.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function htmlspecialchars expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/TrackingController.php
-
-		-
 			message: "#^Parameter \\#2 \\$selected of method PhpMyAdmin\\\\Tracking\\\\Tracking\\:\\:createTrackingForMultipleTables\\(\\) expects array, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Database/TrackingController.php
 
 		-
-			message: "#^Parameter \\#2 \\$tableName of method PhpMyAdmin\\\\Tracking\\\\Tracking\\:\\:deleteTracking\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/TrackingController.php
-
-		-
 			message: "#^Parameter \\#2 \\$urlParams of method PhpMyAdmin\\\\Tracking\\\\Tracking\\:\\:getHtmlForDbTrackingTables\\(\\) expects array, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Database/TrackingController.php
-
-		-
-			message: "#^Parameter \\#3 \\$version of method PhpMyAdmin\\\\Tracking\\\\Tracking\\:\\:createTrackingForMultipleTables\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Database/TrackingController.php
 
@@ -2274,21 +2124,6 @@ parameters:
 			path: src/Controllers/Export/ExportController.php
 
 		-
-			message: "#^Parameter \\#11 \\$allrows of method PhpMyAdmin\\\\Export\\\\Export\\:\\:exportTable\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Export/ExportController.php
-
-		-
-			message: "#^Parameter \\#12 \\$limitTo of method PhpMyAdmin\\\\Export\\\\Export\\:\\:exportTable\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Export/ExportController.php
-
-		-
-			message: "#^Parameter \\#13 \\$limitFrom of method PhpMyAdmin\\\\Export\\\\Export\\:\\:exportTable\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Export/ExportController.php
-
-		-
 			message: "#^Parameter \\#14 \\$sqlQuery of method PhpMyAdmin\\\\Export\\\\Export\\:\\:exportTable\\(\\) expects string, mixed given\\.$#"
 			count: 2
 			path: src/Controllers/Export/ExportController.php
@@ -2364,11 +2199,6 @@ parameters:
 			path: src/Controllers/Export/ExportController.php
 
 		-
-			message: "#^Parameter \\#5 \\$filenameTemplate of method PhpMyAdmin\\\\Export\\\\Export\\:\\:getFilenameAndMimetype\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Export/ExportController.php
-
-		-
 			message: "#^Parameter \\#5 \\$sqlQuery of static method PhpMyAdmin\\\\Export\\\\Export\\:\\:exportRaw\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Export/ExportController.php
@@ -2420,11 +2250,6 @@ parameters:
 			path: src/Controllers/Export/Template/DeleteController.php
 
 		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 1
-			path: src/Controllers/Export/Template/DeleteController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
@@ -2433,20 +2258,10 @@ parameters:
 			path: src/Controllers/Export/Template/LoadController.php
 
 		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 1
-			path: src/Controllers/Export/Template/LoadController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
 			"""
-			count: 1
-			path: src/Controllers/Export/Template/UpdateController.php
-
-		-
-			message: "#^Cannot cast mixed to int\\.$#"
 			count: 1
 			path: src/Controllers/Export/Template/UpdateController.php
 
@@ -2509,11 +2324,6 @@ parameters:
 			path: src/Controllers/HomeController.php
 
 		-
-			message: "#^Static property PhpMyAdmin\\\\Current\\:\\:\\$database \\(string\\) does not accept mixed\\.$#"
-			count: 1
-			path: src/Controllers/HomeController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
@@ -2559,16 +2369,6 @@ parameters:
 		-
 			message: "#^Cannot call method getDisplay\\(\\) on mixed\\.$#"
 			count: 1
-			path: src/Controllers/Import/ImportController.php
-
-		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 4
-			path: src/Controllers/Import/ImportController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 3
 			path: src/Controllers/Import/ImportController.php
 
 		-
@@ -2652,16 +2452,6 @@ parameters:
 			path: src/Controllers/Import/ImportController.php
 
 		-
-			message: "#^Parameter \\#4 \\$sqlQueryForBookmark of method PhpMyAdmin\\\\Sql\\:\\:storeTheQueryAsBookmark\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Import/ImportController.php
-
-		-
-			message: "#^Parameter \\#5 \\$bookmarkLabel of method PhpMyAdmin\\\\Sql\\:\\:storeTheQueryAsBookmark\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Import/ImportController.php
-
-		-
 			message: "#^Parameter \\#5 \\$exit of static method PhpMyAdmin\\\\Html\\\\Generator\\:\\:mysqlDie\\(\\) expects bool, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Import/ImportController.php
@@ -2737,71 +2527,6 @@ parameters:
 			path: src/Controllers/LicenseController.php
 
 		-
-			message: "#^Parameter \\#1 \\$database of method PhpMyAdmin\\\\Navigation\\\\Navigation\\:\\:getItemUnhideDialog\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/NavigationController.php
-
-		-
-			message: "#^Parameter \\#1 \\$itemName of method PhpMyAdmin\\\\Navigation\\\\Navigation\\:\\:hideNavigationItem\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/NavigationController.php
-
-		-
-			message: "#^Parameter \\#1 \\$itemName of method PhpMyAdmin\\\\Navigation\\\\Navigation\\:\\:unhideNavigationItem\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/NavigationController.php
-
-		-
-			message: "#^Parameter \\#2 \\$itemType of method PhpMyAdmin\\\\Navigation\\\\Navigation\\:\\:hideNavigationItem\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/NavigationController.php
-
-		-
-			message: "#^Parameter \\#2 \\$itemType of method PhpMyAdmin\\\\Navigation\\\\Navigation\\:\\:unhideNavigationItem\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/NavigationController.php
-
-		-
-			message: "#^Parameter \\#3 \\$dbName of method PhpMyAdmin\\\\Navigation\\\\Navigation\\:\\:hideNavigationItem\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/NavigationController.php
-
-		-
-			message: "#^Parameter \\#3 \\$dbName of method PhpMyAdmin\\\\Navigation\\\\Navigation\\:\\:unhideNavigationItem\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/NavigationController.php
-
-		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 1
-			path: src/Controllers/Normalization/CreateNewColumnController.php
-
-		-
-			message: "#^Parameter \\#1 \\$repeatingColumns of method PhpMyAdmin\\\\Normalization\\:\\:moveRepeatingGroup\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Normalization/MoveRepeatingGroup.php
-
-		-
-			message: "#^Parameter \\#2 \\$primaryColumns of method PhpMyAdmin\\\\Normalization\\:\\:moveRepeatingGroup\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Normalization/MoveRepeatingGroup.php
-
-		-
-			message: "#^Parameter \\#3 \\$newTable of method PhpMyAdmin\\\\Normalization\\:\\:moveRepeatingGroup\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Normalization/MoveRepeatingGroup.php
-
-		-
-			message: "#^Parameter \\#4 \\$newColumn of method PhpMyAdmin\\\\Normalization\\:\\:moveRepeatingGroup\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Normalization/MoveRepeatingGroup.php
-
-		-
-			message: "#^Parameter \\#1 \\$json of function json_decode expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Normalization/SecondNormalForm/CreateNewTablesController.php
-
-		-
 			message: "#^Parameter \\#1 \\$partialDependencies of method PhpMyAdmin\\\\Normalization\\:\\:createNewTablesFor2NF\\(\\) expects array, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Normalization/SecondNormalForm/CreateNewTablesController.php
@@ -2812,19 +2537,9 @@ parameters:
 			path: src/Controllers/Normalization/SecondNormalForm/CreateNewTablesController.php
 
 		-
-			message: "#^Parameter \\#1 \\$json of function json_decode expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Normalization/SecondNormalForm/NewTablesController.php
-
-		-
 			message: "#^Parameter \\#1 \\$partialDependencies of method PhpMyAdmin\\\\Normalization\\:\\:getHtmlForNewTables2NF\\(\\) expects array, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Normalization/SecondNormalForm/NewTablesController.php
-
-		-
-			message: "#^Parameter \\#1 \\$json of function json_decode expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Normalization/ThirdNormalForm/CreateNewTablesController.php
 
 		-
 			message: "#^Parameter \\#1 \\$newTables of method PhpMyAdmin\\\\Normalization\\:\\:createNewTablesFor3NF\\(\\) expects array, mixed given\\.$#"
@@ -2842,11 +2557,6 @@ parameters:
 			path: src/Controllers/Normalization/ThirdNormalForm/NewTablesController.php
 
 		-
-			message: "#^Parameter \\#1 \\$json of function json_decode expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Normalization/ThirdNormalForm/NewTablesController.php
-
-		-
 			message: "#^Parameter \\#2 \\$tables of method PhpMyAdmin\\\\Normalization\\:\\:getHtmlForNewTables3NF\\(\\) expects array, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Normalization/ThirdNormalForm/NewTablesController.php
@@ -2856,21 +2566,6 @@ parameters:
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
 			"""
-			count: 1
-			path: src/Controllers/Operations/Database/CollationController.php
-
-		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 1
-			path: src/Controllers/Operations/Database/CollationController.php
-
-		-
-			message: "#^Parameter \\#1 \\$collation of static method PhpMyAdmin\\\\Util\\:\\:getCharsetQueryPart\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Operations/Database/CollationController.php
-
-		-
-			message: "#^Parameter \\#3 \\$tableCollation of method PhpMyAdmin\\\\Operations\\:\\:changeAllColumnsCollation\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Operations/Database/CollationController.php
 
@@ -2904,11 +2599,6 @@ parameters:
 
 		-
 			message: "#^Parameter \\#1 \\$state of method PhpMyAdmin\\\\ResponseRenderer\\:\\:setRequestStatus\\(\\) expects bool, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Operations/DatabaseController.php
-
-		-
-			message: "#^Parameter \\#2 \\$comment of method PhpMyAdmin\\\\ConfigStorage\\\\Relation\\:\\:setDbComment\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Operations/DatabaseController.php
 
@@ -3012,20 +2702,10 @@ parameters:
 			path: src/Controllers/Preferences/ExportController.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function ltrim expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Preferences/ExportController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
 			"""
-			count: 1
-			path: src/Controllers/Preferences/FeaturesController.php
-
-		-
-			message: "#^Parameter \\#1 \\$string of function ltrim expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Preferences/FeaturesController.php
 
@@ -3038,20 +2718,10 @@ parameters:
 			path: src/Controllers/Preferences/ImportController.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function ltrim expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Preferences/ImportController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
 			"""
-			count: 1
-			path: src/Controllers/Preferences/MainPanelController.php
-
-		-
-			message: "#^Parameter \\#1 \\$string of function ltrim expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Preferences/MainPanelController.php
 
@@ -3065,11 +2735,6 @@ parameters:
 
 		-
 			message: "#^Only booleans are allowed in an if condition, PhpMyAdmin\\\\Message\\|string given\\.$#"
-			count: 1
-			path: src/Controllers/Preferences/ManageController.php
-
-		-
-			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Preferences/ManageController.php
 
@@ -3089,7 +2754,7 @@ parameters:
 			path: src/Controllers/Preferences/ManageController.php
 
 		-
-			message: "#^Parameter \\#1 \\$json of function json_decode expects string, mixed given\\.$#"
+			message: "#^Parameter \\#1 \\$json of function json_decode expects string, string\\|false given\\.$#"
 			count: 1
 			path: src/Controllers/Preferences/ManageController.php
 
@@ -3100,16 +2765,6 @@ parameters:
 
 		-
 			message: "#^Parameter \\#1 \\$theme of method PhpMyAdmin\\\\Theme\\\\ThemeManager\\:\\:setActiveTheme\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Preferences/ManageController.php
-
-		-
-			message: "#^Parameter \\#1 \\$url of function parse_url expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Preferences/ManageController.php
-
-		-
-			message: "#^Parameter \\#1 \\$url of static method PhpMyAdmin\\\\Util\\:\\:splitURLQuery\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Preferences/ManageController.php
 
@@ -3127,20 +2782,10 @@ parameters:
 			path: src/Controllers/Preferences/NavigationController.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function ltrim expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Preferences/NavigationController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
 			"""
-			count: 1
-			path: src/Controllers/Preferences/SqlController.php
-
-		-
-			message: "#^Parameter \\#1 \\$string of function ltrim expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Preferences/SqlController.php
 
@@ -3153,30 +2798,10 @@ parameters:
 			path: src/Controllers/Preferences/TwoFactorController.php
 
 		-
-			message: "#^Parameter \\#2 \\$name of method PhpMyAdmin\\\\TwoFactor\\:\\:configure\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Preferences/TwoFactorController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
 			"""
-			count: 1
-			path: src/Controllers/Server/BinlogController.php
-
-		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 1
-			path: src/Controllers/Server/BinlogController.php
-
-		-
-			message: "#^Parameter \\#1 \\$key of function array_key_exists expects int\\|string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/BinlogController.php
-
-		-
-			message: "#^Parameter \\#1 \\$log of method PhpMyAdmin\\\\Controllers\\\\Server\\\\BinlogController\\:\\:getSqlQuery\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Server/BinlogController.php
 
@@ -3264,11 +2889,6 @@ parameters:
 
 		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 1
-			path: src/Controllers/Server/DatabasesController.php
-
-		-
-			message: "#^Parameter \\#1 \\$connection of method PhpMyAdmin\\\\Replication\\\\ReplicationInfo\\:\\:load\\(\\) expects string\\|null, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Server/DatabasesController.php
 
@@ -3371,11 +2991,6 @@ parameters:
 			path: src/Controllers/Server/PrivilegesController.php
 
 		-
-			message: "#^Parameter \\#1 \\$oldUsername of method PhpMyAdmin\\\\Server\\\\Privileges\\:\\:getDataForChangeOrCopyUser\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/PrivilegesController.php
-
-		-
 			message: "#^Parameter \\#1 \\$string of function urlencode expects string, \\(array\\<int, string\\>\\|string\\) given\\.$#"
 			count: 1
 			path: src/Controllers/Server/PrivilegesController.php
@@ -3441,17 +3056,7 @@ parameters:
 			path: src/Controllers/Server/PrivilegesController.php
 
 		-
-			message: "#^Parameter \\#2 \\$oldHostname of method PhpMyAdmin\\\\Server\\\\Privileges\\:\\:getDataForChangeOrCopyUser\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/PrivilegesController.php
-
-		-
 			message: "#^Parameter \\#2 \\$sqlQuery of method PhpMyAdmin\\\\Server\\\\Privileges\\:\\:getExtraDataForAjaxBehavior\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/PrivilegesController.php
-
-		-
-			message: "#^Parameter \\#2 \\$userGroup of method PhpMyAdmin\\\\Server\\\\Privileges\\:\\:setUserGroup\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Server/PrivilegesController.php
 
@@ -3521,11 +3126,6 @@ parameters:
 			path: src/Controllers/Server/PrivilegesController.php
 
 		-
-			message: "#^Parameter \\#4 \\$oldUsername of method PhpMyAdmin\\\\Server\\\\Privileges\\:\\:getDbSpecificPrivsQueriesForChangeOrCopyUser\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/PrivilegesController.php
-
-		-
 			message: "#^Parameter \\#4 \\$username of method PhpMyAdmin\\\\Server\\\\Privileges\\:\\:getExtraDataForAjaxBehavior\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Server/PrivilegesController.php
@@ -3536,22 +3136,7 @@ parameters:
 			path: src/Controllers/Server/PrivilegesController.php
 
 		-
-			message: "#^Parameter \\#5 \\$oldHostname of method PhpMyAdmin\\\\Server\\\\Privileges\\:\\:getDbSpecificPrivsQueriesForChangeOrCopyUser\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/PrivilegesController.php
-
-		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 1
-			path: src/Controllers/Server/ReplicationController.php
-
-		-
 			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/ReplicationController.php
-
-		-
-			message: "#^Parameter \\#10 \\$hostname of method PhpMyAdmin\\\\Replication\\\\ReplicationGui\\:\\:handleControlRequest\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Server/ReplicationController.php
 
@@ -3561,64 +3146,9 @@ parameters:
 			path: src/Controllers/Server/ReplicationController.php
 
 		-
-			message: "#^Parameter \\#8 \\$username of method PhpMyAdmin\\\\Replication\\\\ReplicationGui\\:\\:handleControlRequest\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/ReplicationController.php
-
-		-
-			message: "#^Parameter \\#9 \\$pmaPassword of method PhpMyAdmin\\\\Replication\\\\ReplicationGui\\:\\:handleControlRequest\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/ReplicationController.php
-
-		-
-			message: "#^Parameter \\#1 \\$requiredData of method PhpMyAdmin\\\\Server\\\\Status\\\\Monitor\\:\\:getJsonForChartingData\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/Status/Monitor/ChartingDataController.php
-
-		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 2
-			path: src/Controllers/Server/Status/Monitor/GeneralLogController.php
-
-		-
-			message: "#^Parameter \\#1 \\$name of method PhpMyAdmin\\\\Server\\\\Status\\\\Monitor\\:\\:getJsonForLoggingVars\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/Status/Monitor/LogVarsController.php
-
-		-
-			message: "#^Parameter \\#2 \\$value of method PhpMyAdmin\\\\Server\\\\Status\\\\Monitor\\:\\:getJsonForLoggingVars\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/Status/Monitor/LogVarsController.php
-
-		-
-			message: "#^Parameter \\#1 \\$database of method PhpMyAdmin\\\\Server\\\\Status\\\\Monitor\\:\\:getJsonForQueryAnalyzer\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/Status/Monitor/QueryAnalyzerController.php
-
-		-
-			message: "#^Parameter \\#2 \\$query of method PhpMyAdmin\\\\Server\\\\Status\\\\Monitor\\:\\:getJsonForQueryAnalyzer\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/Status/Monitor/QueryAnalyzerController.php
-
-		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 2
-			path: src/Controllers/Server/Status/Monitor/SlowLogController.php
-
-		-
 			message: "#^Only booleans are allowed in an if condition, PhpMyAdmin\\\\Dbal\\\\ResultInterface\\|false given\\.$#"
 			count: 1
 			path: src/Controllers/Server/Status/Processes/KillController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 2
-			path: src/Controllers/Server/Status/Processes/RefreshController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 2
-			path: src/Controllers/Server/Status/ProcessesController.php
 
 		-
 			message: "#^Cannot cast mixed to int\\.$#"
@@ -3637,11 +3167,6 @@ parameters:
 
 		-
 			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Server/Status/StatusController.php
-
-		-
-			message: "#^Parameter \\#1 \\$connection of method PhpMyAdmin\\\\Replication\\\\ReplicationGui\\:\\:getHtmlForReplicationStatusTable\\(\\) expects string\\|null, mixed given\\.$#"
 			count: 2
 			path: src/Controllers/Server/Status/StatusController.php
 
@@ -3691,21 +3216,6 @@ parameters:
 			path: src/Controllers/Server/Status/VariablesController.php
 
 		-
-			message: "#^Parameter \\#2 \\$userGroup of static method PhpMyAdmin\\\\ConfigStorage\\\\UserGroups\\:\\:edit\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Server/UserGroupsController.php
-
-		-
-			message: "#^Parameter \\#2 \\$userGroup of static method PhpMyAdmin\\\\ConfigStorage\\\\UserGroups\\:\\:getHtmlForListingUsersofAGroup\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/UserGroupsController.php
-
-		-
-			message: "#^Parameter \\#2 \\$userGroup of static method PhpMyAdmin\\\\ConfigStorage\\\\UserGroups\\:\\:getHtmlToEditUserGroup\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Server/UserGroupsController.php
-
-		-
 			message: "#^Only booleans are allowed in an if condition, PhpMyAdmin\\\\Dbal\\\\ResultInterface\\|false given\\.$#"
 			count: 1
 			path: src/Controllers/Server/UserGroupsFormController.php
@@ -3714,11 +3224,6 @@ parameters:
 			message: "#^Offset 1 does not exist on array\\<string\\|null\\>\\|null\\.$#"
 			count: 2
 			path: src/Controllers/Server/Variables/GetVariableController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 1
-			path: src/Controllers/Server/Variables/SetVariableController.php
 
 		-
 			message: "#^Offset 1 does not exist on array\\<string\\|null\\>\\|null\\.$#"
@@ -3786,44 +3291,9 @@ parameters:
 			path: src/Controllers/Setup/ValidateController.php
 
 		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 2
-			path: src/Controllers/Sql/EnumValuesController.php
-
-		-
 			message: "#^Cannot access offset 'relational_display' on mixed\\.$#"
 			count: 1
 			path: src/Controllers/Sql/RelationalValuesController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 2
-			path: src/Controllers/Sql/RelationalValuesController.php
-
-		-
-			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 1
-			path: src/Controllers/Sql/SetValuesController.php
-
-		-
-			message: "#^Parameter \\#2 \\$string of function explode expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Sql/SetValuesController.php
-
-		-
-			message: "#^Parameter \\#3 \\$column of method PhpMyAdmin\\\\Sql\\:\\:getFullValuesForSetColumn\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Sql/SetValuesController.php
-
-		-
-			message: "#^Parameter \\#3 \\$columnName of method PhpMyAdmin\\\\Sql\\:\\:getValuesForColumn\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Sql/SetValuesController.php
-
-		-
-			message: "#^Parameter \\#4 \\$whereClause of method PhpMyAdmin\\\\Sql\\:\\:getFullValuesForSetColumn\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Sql/SetValuesController.php
 
 		-
 			message: """
@@ -4157,11 +3627,6 @@ parameters:
 			path: src/Controllers/Table/CreateController.php
 
 		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 5
-			path: src/Controllers/Table/CreateController.php
-
-		-
 			message: "#^Parameter \\#1 \\$string of function strlen expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Table/CreateController.php
@@ -4359,16 +3824,6 @@ parameters:
 			path: src/Controllers/Table/FindReplaceController.php
 
 		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 1
-			path: src/Controllers/Table/FindReplaceController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 3
-			path: src/Controllers/Table/FindReplaceController.php
-
-		-
 			message: "#^Parameter \\#1 \\$identifier of static method PhpMyAdmin\\\\Util\\:\\:backquote\\(\\) expects string\\|Stringable\\|null, mixed given\\.$#"
 			count: 16
 			path: src/Controllers/Table/FindReplaceController.php
@@ -4489,21 +3944,6 @@ parameters:
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
 			"""
-			count: 1
-			path: src/Controllers/Table/IndexRenameController.php
-
-		-
-			message: "#^Parameter \\#1 \\$index of method PhpMyAdmin\\\\Table\\\\Table\\:\\:getIndex\\(\\) expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Table/IndexRenameController.php
-
-		-
-			message: "#^Parameter \\#1 \\$name of method PhpMyAdmin\\\\Index\\:\\:setName\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Table/IndexRenameController.php
-
-		-
-			message: "#^Parameter \\#1 \\$oldIndexName of method PhpMyAdmin\\\\Table\\\\Indexes\\:\\:getSqlQueryForRename\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Table/IndexRenameController.php
 
@@ -4827,11 +4267,6 @@ parameters:
 			path: src/Controllers/Table/ReplaceController.php
 
 		-
-			message: "#^Parameter \\#1 \\$name of class PhpMyAdmin\\\\Table\\\\Table constructor expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Table/ReplaceController.php
-
-		-
 			message: "#^Parameter \\#1 \\$oneWhereClause of method PhpMyAdmin\\\\InsertEdit\\:\\:setSessionForEditNext\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Table/ReplaceController.php
@@ -4852,17 +4287,7 @@ parameters:
 			path: src/Controllers/Table/ReplaceController.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function parse_str expects string, mixed given\\.$#"
-			count: 2
-			path: src/Controllers/Table/ReplaceController.php
-
-		-
 			message: "#^Parameter \\#1 \\$urlParams of method PhpMyAdmin\\\\InsertEdit\\:\\:getErrorUrl\\(\\) expects array, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Table/ReplaceController.php
-
-		-
-			message: "#^Parameter \\#2 \\$dbName of class PhpMyAdmin\\\\Table\\\\Table constructor expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Table/ReplaceController.php
 
@@ -4998,11 +4423,6 @@ parameters:
 			path: src/Controllers/Table/SqlController.php
 
 		-
-			message: "#^Parameter \\#1 \\$string of function htmlspecialchars expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/Table/SqlController.php
-
-		-
 			message: "#^Parameter \\#3 \\$query of method PhpMyAdmin\\\\SqlQueryForm\\:\\:getHtml\\(\\) expects bool\\|string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Table/SqlController.php
@@ -5029,11 +4449,6 @@ parameters:
 
 		-
 			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
-			count: 1
-			path: src/Controllers/Table/Structure/CentralColumnsAddController.php
-
-		-
-			message: "#^Parameter \\#4 \\$containingTable of method PhpMyAdmin\\\\Database\\\\CentralColumns\\:\\:syncUniqueColumns\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Table/Structure/CentralColumnsAddController.php
 
@@ -5373,16 +4788,6 @@ parameters:
 			path: src/Controllers/Table/TrackingController.php
 
 		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 2
-			path: src/Controllers/Table/TrackingController.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 1
-			path: src/Controllers/Table/TrackingController.php
-
-		-
 			message: "#^Parameter \\#1 \\$params of static method PhpMyAdmin\\\\Url\\:\\:getCommon\\(\\) expects array\\<string, bool\\|int\\|string\\>, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/Table/TrackingController.php
@@ -5541,11 +4946,6 @@ parameters:
 			path: src/Controllers/Table/ZoomSearchController.php
 
 		-
-			message: "#^Parameter \\#1 \\$database of method PhpMyAdmin\\\\DatabaseInterface\\:\\:getTables\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/TableController.php
-
-		-
 			message: """
 				#^Call to deprecated method getInstance\\(\\) of class PhpMyAdmin\\\\Config\\:
 				Use dependency injection instead\\.$#
@@ -5620,32 +5020,12 @@ parameters:
 			path: src/Controllers/UserPasswordController.php
 
 		-
-			message: "#^Parameter \\#1 \\$password of method PhpMyAdmin\\\\UserPassword\\:\\:changePassword\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/UserPasswordController.php
-
-		-
-			message: "#^Parameter \\#1 \\$pmaPw of method PhpMyAdmin\\\\UserPassword\\:\\:setChangePasswordMsg\\(\\) expects string, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/UserPasswordController.php
-
-		-
 			message: "#^Parameter \\#1 \\$username of method PhpMyAdmin\\\\UserPassword\\:\\:getFormForChangePassword\\(\\) expects string\\|null, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/UserPasswordController.php
 
 		-
-			message: "#^Parameter \\#2 \\$authenticationPlugin of method PhpMyAdmin\\\\UserPassword\\:\\:changePassword\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/UserPasswordController.php
-
-		-
 			message: "#^Parameter \\#2 \\$hostname of method PhpMyAdmin\\\\UserPassword\\:\\:getFormForChangePassword\\(\\) expects string\\|null, mixed given\\.$#"
-			count: 1
-			path: src/Controllers/UserPasswordController.php
-
-		-
-			message: "#^Parameter \\#2 \\$pmaPw2 of method PhpMyAdmin\\\\UserPassword\\:\\:setChangePasswordMsg\\(\\) expects string, mixed given\\.$#"
 			count: 1
 			path: src/Controllers/UserPasswordController.php
 
@@ -11353,13 +10733,8 @@ parameters:
 			path: src/Plugins/Import/ImportCsv.php
 
 		-
-			message: "#^Cannot cast mixed to int\\.$#"
-			count: 1
-			path: src/Plugins/Import/ImportCsv.php
-
-		-
 			message: "#^Cannot cast mixed to string\\.$#"
-			count: 8
+			count: 1
 			path: src/Plugins/Import/ImportCsv.php
 
 		-
@@ -11411,11 +10786,6 @@ parameters:
 				Use dependency injection instead\\.$#
 			"""
 			count: 2
-			path: src/Plugins/Import/ImportLdi.php
-
-		-
-			message: "#^Cannot cast mixed to string\\.$#"
-			count: 5
 			path: src/Plugins/Import/ImportLdi.php
 
 		-
